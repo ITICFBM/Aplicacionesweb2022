@@ -1,0 +1,23 @@
+/* Aplica para todas la etiqueta p */
+p{
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+/* Diseños Por clases */
+
+.list{
+    background-color: yellow;
+    color: black;
+}
+.table{
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+.title{
+    background-color: #0052e0b3;
+    color: #ffffff;
+    text-align: center;
+
+}

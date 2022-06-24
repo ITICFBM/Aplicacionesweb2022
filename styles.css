@@ -1,0 +1,28 @@
+/* ponemos estilos a etiquetas de html */
+p{
+color: blue;
+background-color: yellow;
+text-align: center;
+}
+/*Colocamos estilos por clases con un . y el nombre de la clase*/
+
+.miprimerestilo{
+    color: #ffffff;
+    background-color: blue;
+}
+.textcenter{
+    text-align: center;
+}
+.centertext{
+    align-items: center;
+}
+.sizeimg{
+    width: 20%;
+    height: 20%;
+}
+/* media querys en css */
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: red;
+    }
+  }
