@@ -1,22 +1,16 @@
 <!-- Inicializamos un archivo de php -->
 <?php
-$mysqli = new mysqli("127.0.0.1", "root", "root", "integrador2022", 8889);
-if ($mysqli->connect_errno) {
-    echo "Fallo al conectar a MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+$conexion = new mysqli("localhost", "root", "root", "integrador2022");
+
+if (!$conexion) {
+  echo "Error: No se pudo conectar a MySQL." . PHP_EOL;
+  echo "errno de depuración: " . mysqli_connect_errno() . PHP_EOL;
+  echo "error de depuración: " . mysqli_connect_error() . PHP_EOL;
+  exit;
 }
 
-echo $mysqli->host_info . "\n";
-/* Consultas de selección que devuelven un conjunto de resultados */
-if ($resultado = $mysqli->query("SELECT nombre FROM diplomas LIMIT 10")) {
-  printf("La selección devolvió %d filas.\n", $resultado->num_rows);
-   
-  /* liberar el conjunto de resultados */
-  $resultado->close();
-}
+//echo "Éxito: Se realizó una conexión apropiada a MySQL! La base de datos mi_bd es genial." . PHP_EOL;
+//echo "Información del host: " . mysqli_get_host_info($conexion) . PHP_EOL;
 
-
-
-   
-$mysqli->close();
 
 ?>

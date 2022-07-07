@@ -1,36 +1,22 @@
+
+
 <?php
-// New Connection
-include('./DB/conexion.php');
-// Check for errors
-if(mysqli_connect_errno()){
-echo mysqli_connect_error();
-}
+/*  Mandamos a llamar  nuestra conexion de php  con require */
+require ('./DB/conexion.php');
+/* Declaramos una variable y dentro de ella asignamos una consulta */
+  $sql = "SELECT * FROM `diplomas`;";
 
-// 1st Query
-$result = $db->query("select * from diplomas");
-if($result){
-     // Cycle through results
-    while ($row = $result->fetch_object()){
-        $user_arr[] = $row;
-    }
-    // Free result set
-    $result->close();
-    $db->next_result();
-}
+  $result = mysqli_query($conexion, $sql);
+  
+  $diplomas = array();
+  while ($fila = mysqli_fetch_array($result)) {
+    array_push($diplomas, $fila);
+  }
+  
+  echo json_encode($diplomas);
 
-// 2nd Query
-$result = $db->query("select * from diplomas");
-if($result){
-     // Cycle through results
-    while ($row = $result->fetch_object()){
-        $group_arr[] = $row;
-    }
-     // Free result set
-     $result->close();
-     $db->next_result();
-}
-else echo($db->error);
+  mysqli_free_result($result);
+  mysqli_close($conexion);
+  
 
-// Close connection
-$db->close();
 ?>
