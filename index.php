@@ -33,7 +33,7 @@ include('./components/Slider.php');
 
 include('./components/Cards.php');
 ?>
-
+<!-- End componentes -->
 <!-- Footer -->
   <div id="footerContainer">
   

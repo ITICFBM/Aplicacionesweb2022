@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <!-- importamos archivos css -->
-  <link rel="stylesheet" href="../../asset/styles/menu.css">
+  <link rel="stylesheet" href="../asset/styles/menu.css">
   <!-- importamos bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -116,9 +116,9 @@
                 </div>
                 <div class="mb-3 form-check">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  <label class="form-check-label" for="exampleCheck1">Recordarme</label>
                 </div>
-                <button type="submit" class="btn btn-primary">Inicar Session</button>
+                <a href="<?=$h->get['base_url'].'../paneladmin'?>" class="btn btn-primary">Inicar Session</a>
               </form>
               </div>
     
@@ -144,7 +144,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <!-- importamos layoutjs -->
-<script src="../../asset/javascript/footer.js"></script>
+<script src="../asset/javascript/footer.js"></script>
 <!-- Aqui importamos nuestros archivos js -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
   integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>

@@ -1,3 +1,7 @@
+<!-- inlcude config.php que tiene la base url -->
+<?php
+include ('../Config.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
