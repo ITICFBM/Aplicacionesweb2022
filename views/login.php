@@ -1,3 +1,8 @@
+<?php
+include ('../Config.php');
+include('../test.php');
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 

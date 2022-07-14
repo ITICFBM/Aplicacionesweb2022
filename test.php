@@ -13,7 +13,7 @@ http://localhost/url/ab
 http://localhost/url/ab/c
 */
 
-include ('./Config.php');
+include_once './Config.php';
 
 class Home
 {
@@ -24,4 +24,4 @@ $h = new Home();
 
 ?>
 
-<a href="<?=$h->get['base_url'].'/views/categories.php'?>">Base</a>
+<!-- <a href="<?=$h->get['base_url'].'/views/categories.php'?>">Base</a> -->

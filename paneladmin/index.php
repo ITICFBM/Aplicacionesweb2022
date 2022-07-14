@@ -1,6 +1,7 @@
 <!-- inlcude config.php que tiene la base url -->
 <?php
 include ('../Config.php');
+include('../test.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +23,7 @@ include ('../Config.php');
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="./styles/sb-admin-2.min.css" rel="stylesheet">
+    <link href="<?=$h->get['base_url'].'/paneladmin/assets/styles/sb-admin-2.min.css'?>" rel="stylesheet">
 
 </head>
 
