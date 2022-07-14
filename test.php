@@ -13,7 +13,7 @@ http://localhost/url/ab
 http://localhost/url/ab/c
 */
 
-include_once './Config.php';
+include_once ('./Config.php');
 
 class Home
 {
