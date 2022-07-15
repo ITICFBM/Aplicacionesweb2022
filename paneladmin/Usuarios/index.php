@@ -1,7 +1,7 @@
 <!-- inlcude config.php que tiene la base url -->
 <?php
-include_once ('../Config.php');
-include_once('../test.php');
+include_once ('../../Config.php');
+include_once('../../test.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,7 +32,8 @@ include_once('../test.php');
 
     <!-- start incluimos menu desde nuestro layout -->
   <?php
-  include './layouts/menu.php'
+  include '../layouts/menu.php';
+  include '../layouts/ContainerUser.php';
   ?>
     <!-- End incluimos menu desde nuestro layout -->
 
