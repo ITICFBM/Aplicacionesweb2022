@@ -12,7 +12,7 @@ http://localhost/url/index.php/
 http://localhost/url/ab
 http://localhost/url/ab/c
 */
-
+/* importamos nuestro trai URL Para poder obtener le serve name  */
 include_once ('./Config.php');
 
 class Home
@@ -24,4 +24,4 @@ $h = new Home();
 
 ?>
 
-<!-- <a href="<?=$h->get['base_url'].'/views/categories.php'?>">Base</a> -->
+<a href="<?=$h->get['base_url'].'/views/categories.php'?>">Base</a> 

@@ -1,4 +1,5 @@
 <?php
+/* importamos los archivos de base url */
 include ('../Config.php');
 include('../test.php');
 

@@ -4,6 +4,7 @@ $base_url = "http://" . $_SERVER['SERVER_NAME']
  -->
 <?php
 trait URL {
+    /* declaros 3 variables 2 privadas y una publica  */
     private $url = '';
     private $current_url = '';
     public $get = '';
