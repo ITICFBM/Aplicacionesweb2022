@@ -2,7 +2,8 @@
 <div class="container-fluid">
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Lista De Usuarios</h1>
+        <h1 class="h3 mb-0 text-gray-800">  <i class="fas fa-camera fa-xs"></i>
+<i class="fa-brands fa-google">Lista De Usuarios</i></h1>
 
     </div>
 

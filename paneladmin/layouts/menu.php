@@ -341,7 +341,7 @@
 
             <!-- Content Row -->
             <div class="row">
-
+            <i class="fa-brands fa-youtube"></i>
                 <!-- Content Column -->
                 <div class="col-lg-6 mb-4">
 
