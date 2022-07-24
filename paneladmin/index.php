@@ -1,7 +1,7 @@
 <!-- inlcude config.php que tiene la base url -->
 <?php
-include_once ('../Config.php');
-include_once('../test.php');
+include(__DIR__ . '../../Config.php');
+include(__DIR__ . '../../test.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,7 +35,6 @@ include_once('../test.php');
   <?php
   include './layouts/menu.php'
   ?>
-    <i class="fas fa-camera fa-xs"></i>
 
     <!-- End incluimos menu desde nuestro layout -->
 

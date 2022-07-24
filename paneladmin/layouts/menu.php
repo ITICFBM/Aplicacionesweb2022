@@ -1,7 +1,7 @@
 <!-- inlcude config.php que tiene la base url -->
 <?php
-include_once ('../../../Config.php');
-include_once('../../../test.php');
+include('../../Config.php');
+include('../../test.php');
 ?>
 <!-- Page Wrapper -->
 <div id="wrapper">
@@ -42,6 +42,7 @@ include_once('../../../test.php');
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">SubMenu:</h6>
                 <a class="collapse-item" href="<?=$h->get['base_url'].'/paneladmin/views/adresses/index.php'?>">Lista De Direcciones</a>
+                <a class="collapse-item" href="<?=$h->get['base_url'].'/paneladmin/views/adresses/add.php'?>">Agregar  Direcciones</a>
           
             </div>
         </div>
@@ -49,41 +50,75 @@ include_once('../../../test.php');
 <!-- En Direcciones -->
     <!-- Grupos -->
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-            aria-expanded="true" aria-controls="collapseUtilities">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities1"
+            aria-expanded="true" aria-controls="collapseUtilities1">
             <i class="fas fa-fw fa-wrench"></i>
             <span>Grupos</span>
         </a>
-        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+        <div id="collapseUtilities1" class="collapse" aria-labelledby="headingUtilities"
             data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Custom Utilities:</h6>
-                <a class="collapse-item" href="utilities-color.html">Colors</a>
-                <a class="collapse-item" href="utilities-border.html">Borders</a>
-                <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                <a class="collapse-item" href="utilities-other.html">Other</a>
+                <h6 class="collapse-header">SubMenu:</h6>
+                <a class="collapse-item" href="<?=$h->get['base_url'].'/paneladmin/views/groups/index.php'?>">Lista De Grupos</a>
+                <a class="collapse-item" href="<?=$h->get['base_url'].'/paneladmin/views/groups/add.php'?>">Agregar  Grupo</a>
+         
             </div>
         </div>
         <!-- End Grupos -->
     <!-- Asignatura -->
     </li>
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-            aria-expanded="true" aria-controls="collapseUtilities">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities2"
+            aria-expanded="true" aria-controls="collapseUtilities2">
             <i class="fas fa-fw fa-wrench"></i>
             <span>Asignaturas</span>
         </a>
-        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+        <div id="collapseUtilities2" class="collapse" aria-labelledby="headingUtilities"
             data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Custom Utilities:</h6>
-                <a class="collapse-item" href="utilities-color.html">Colors</a>
-                <a class="collapse-item" href="utilities-border.html">Borders</a>
+            <a class="collapse-item" href="<?=$h->get['base_url'].'/paneladmin/views/subject/index.php'?>">Lista De Asignaturas</a>
+            <a class="collapse-item" href="<?=$h->get['base_url'].'/paneladmin/views/subject/add.php'?>">Agregar  Asignatura</a>
 
             </div>
         </div>
     </li>
     <!-- End Asignatura -->
+    <!-- Laboratories -->
+    </li>
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities3"
+            aria-expanded="true" aria-controls="collapseUtilities3">
+            <i class="fas fa-fw fa-wrench"></i>
+            <span>Laboratories</span>
+        </a>
+        <div id="collapseUtilities3" class="collapse" aria-labelledby="headingUtilities"
+            data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="<?=$h->get['base_url'].'/paneladmin/views/laboratories/index.php'?>">Lista De Laboratorios</a>
+            <a class="collapse-item" href="<?=$h->get['base_url'].'/paneladmin/views/laboratories/add.php'?>">Agregar  Laboratorio</a>
+
+            </div>
+        </div>
+    </li>
+    <!-- End Laboratories -->
+    <!-- Start Usuer -->
+    </li>
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities4"
+            aria-expanded="true" aria-controls="collapseUtilities4">
+            <i class="fas fa-fw fa-wrench"></i>
+            <span>Usuarios</span>
+        </a>
+        <div id="collapseUtilities4" class="collapse" aria-labelledby="headingUtilities"
+            data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="<?=$h->get['base_url'].'/paneladmin/views/users/index.php'?>">Lista De Usuarios</a>
+            <a class="collapse-item" href="<?=$h->get['base_url'].'/paneladmin/views/users/add.php'?>">Agregar  Usuarios</a>
+
+            </div>
+        </div>
+    </li>
+    <!-- End Users -->
 </ul>
 <!-- End of Sidebar -->
 
@@ -97,7 +132,7 @@ include_once('../../../test.php');
 
     <!-- start incluimos nav desde nuestro layout -->
     <?php
-  include '../../layouts/nav.php'
+  include('./nav.php');
   ?>
 
   
