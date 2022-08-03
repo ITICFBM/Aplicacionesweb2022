@@ -1,6 +1,7 @@
 <!-- Inicializamos un archivo de php -->
 <?php
-$conexion = new mysqli("localhost", "root", "", "integrador2022");
+//$conexion = new mysqli("localhost", "root", "", "integrador2022");
+$conexion = new mysqli("localhost", "root", "", "utvt2022");
 
 if (!$conexion) {
   echo "Error: No se pudo conectar a MySQL." . PHP_EOL;
