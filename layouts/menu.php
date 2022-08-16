@@ -1,7 +1,7 @@
 <?php
 /* importamos los archivos de base url */
-include ('../Config.php');
-include('../test.php');
+include_once ('../Config.php');
+include_once('../test.php');
 
 ?>
 <nav>

@@ -75,16 +75,20 @@ include_once ('../../../test.php');
                                 </div>
                                 <!-- Card Foremulario Direcciones -->
                                 <div class="card-body">
-                                <form>
+                                <form action='../../class/AdresesClass.php' method="POST" >
                                     <div class="col-12">
                                         <div class="row">
+                                        <div class="col-12">
+                                                <label for="exampleInputEmail1" class="form-label">Clave:</label>
+                                                <input type="text" name='id'  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            </div>
                                             <div class="col-12">
                                                 <label for="exampleInputEmail1" class="form-label">Nombre:</label>
-                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                <input type="text" name='name'  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                                             </div>
                                             <div class="col-12">
                                                 <label for="exampleInputPassword1" class="form-label">Descripcion:</label>
-                                                <textarea type="textarea" class="form-control" id="exampleInputPassword1"></textarea>
+                                                <textarea type="textarea" name='description' class="form-control" id="exampleInputPassword1"></textarea>
                                             </div>
                                             <div class="m-3">
                                             <button type="submit" class="btn btn-primary">Guardar</button>

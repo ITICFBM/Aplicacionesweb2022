@@ -13,7 +13,6 @@ http://localhost/url/ab
 http://localhost/url/ab/c
 */
 /* importamos nuestro trai URL Para poder obtener le serve name  */
-include('./Config.php');
 class Home
 {
     use URL;

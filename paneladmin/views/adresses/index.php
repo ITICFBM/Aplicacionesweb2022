@@ -85,36 +85,45 @@ include_once ('../../../test.php');
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Name</th>
+                                            <th>Namedede</th>
                                             <th>Description</th>
                                             
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
-                                            <th>Name</th>
+                                            <th>Ndededeame</th>
                                             <th>Description</th>
                                             
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                    <?php
+                               <?php
+                                        include ('../../class/AdresesClass.php');
                                             if ($resultado = $conexion->query($consulta)) {
 
                                                 /* obtener el array de objetos */
                                                 while ($obj = $resultado->fetch_object()) {
-                                                    //printf ("%s (%s)\n", $obj->name, $obj->description);
+                                                  /*  printf ("%s (%s)\n", $obj->name, $obj->description);*/
                                             
-                                        }
-                                           /* liberar el conjunto de resultados */
-                                           //$resultado->close();
-                                        }
-                                        ?>
-
-                                        <tr>
+                                                    ?> */
+                                                    /*
+   <tr>
                                         <td> <?= $obj->name ?></td>
                                         <td> <?= $obj->description ?></td>
                                         </tr> 
+                                        <?php
+
+                                           /* liberar el conjunto de resultados 
+                                           $resultado->close();*/
+                                        }
+                                    }
+                                
+                                        ?> 
+                                        
+
+*/
+                                     
                                             
                                     </tbody>
                                 </table>

@@ -1,8 +1,4 @@
-<!-- inlcude config.php que tiene la base url -->
-<?php
-include('../../Config.php');
-include('../../test.php');
-?>
+
 <!-- Page Wrapper -->
 <div id="wrapper">
 
@@ -132,7 +128,7 @@ include('../../test.php');
 
     <!-- start incluimos nav desde nuestro layout -->
     <?php
-  include('./nav.php');
+  include('nav.php');
   ?>
 
   
